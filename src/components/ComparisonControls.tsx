@@ -18,7 +18,7 @@ export const ComparisonControls = ({
           options={allPokemon}
           getOptionLabel={(option) => option.name}
           value={selectedPokemon1}
-          onChange={(event, newValue) => onPokemonChange1(newValue)}
+          onChange={(_event, newValue) => onPokemonChange1(newValue)}
           renderInput={(params) => (
             <TextField {...params} label='Pilih Pokemon 1' />
           )}
@@ -29,7 +29,7 @@ export const ComparisonControls = ({
           options={allPokemon}
           getOptionLabel={(option) => option.name}
           value={selectedPokemon2}
-          onChange={(event, newValue) => onPokemonChange2(newValue)}
+          onChange={(_event, newValue) => onPokemonChange2(newValue)}
           renderInput={(params) => (
             <TextField {...params} label='Pilih Pokemon 2' />
           )}
