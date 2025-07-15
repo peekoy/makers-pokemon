@@ -49,8 +49,11 @@ export const runComparison =
       data1.stats.forEach((s1) => {
         const s2 = data2.stats.find((s) => s.stat.name === s1.stat.name);
         if (s2) {
-          if (s1.base_stat > s2.base_stat) score1++;
-          else if (s2.base_stat > s1.base_stat) score2++;
+          if (s1.base_stat > s2.base_stat) {
+            score1++;
+          } else if (s2.base_stat > s1.base_stat) {
+            score2++;
+          }
         }
       });
 
